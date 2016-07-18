@@ -1,0 +1,205 @@
+/*     Template: Classic Template*     CSS File: body.css*     Description: All the body of the webstore. All this content lies                    within the mainbodycenter element.*     Copyright (c) NitroSell Ltd 2006*     Creation Date: 28/11/2006*/
+/*reset some values*/
+#productphoto { margin: 10px 10px 10px 0px; }
+#checkstocklink,table.specialtable TH { font-size: 14px; color: #EA672A; font-weight: bold; text-align:center }
+.matrixtitle { font-weight: bold; font-size: 12px; min-width: 40px; }
+.matrixoption { width: 170px; font-size: 12px }
+#productphoto { margin: 10px 10px 10px 0px; }
+#baskettable,#producttable { padding-left: 7px; padding-right: 7px; }
+.productlisttable td { margin:0; padding:0; }
+.productlisttable { border-collapse:collapse; border-spacing:0; }
+
+/* all textareas and others (in FF only) */
+textarea { width:100%; border-left: solid 1px #595965; border-right: solid 1px #595965; border-top: solid 1px #595965; border-bottom: solid 1px #595965; }
+input[type="password"] { margin-top:3px; }
+input[type="text"], input[type="textbox"], input[type="password"], input[name="quantity"], .textbox { border: solid 1px #595965; }
+
+/*     General Page Headings */
+
+/* header on all main product and search pages */
+h1,.heading-main { margin:0; 
+/* reset all margins */
+ color: #EA672A; font-weight: bold; text-align:left; font-size:16px; }
+.heading-subcategory { color: gray; font-weight: bold; }
+
+/* "you are here" heading */
+ .heading-small { width: 100%; text-align:center; color: Gray; font-weight: normal; margin-top:10px; font-size:12px; }
+.heading-product { color: #EA672A; font-weight: bold; font-size:21px; padding-top:5px; }
+
+/*     Product Listings */
+.productlisttable { font-size:11px; }
+.productlisttable td { margin:0; padding:5 5 5 0; }
+.productlistheader { background-color: #EEEDED; font-weight: bold; font-size:12px; }
+.productlist-row1 { background: #EEEDED; }
+.productlist-col4 { font-size:12px; font-weight:bold; }
+.product-link { color: #000; font-size:12px; font-weight:bold; }
+.product-link .image-thumb { font-weight:bold; }
+.product-summary {}
+.cathead { font-weight:bold; font-size:14px; color:#EA672A; margin-bottom:10px; }
+
+/*     Product Page */
+#page-product .mainbodycenter { padding:0; margin:0; padding-top:10px; }
+#product-image-table { padding-top:10px; }
+#productbody p { margin-top:2px; margin-bottom:8px; }
+
+/* all product desc text*/
+.text-product-desc{ font-size:12px; margin-left:20px; margin-right:20px; }
+#tell-a-friend-link{ padding-top:10px; height:25px; margin-left:20px; font-weight:bold; color:#EA672A; font-size:14px; width:250px; clear:all; 
+/* doesn't work in FF */
+ background: url('store_images/btn-quick-find.gif') no-repeat transparent 95 5; }
+
+/* wrapper around pricing, availability, matrix*/
+#productbuyinfo{ display:block; clear:both; }
+#productbuyinfo table{ background:#D5D8E1; padding-left:10px; padding-right:10px; width:315px; }
+#productbuyinfo b { font-size:12px; }
+ #productbuyinfo .text-pricingdetails { font-size:12px; }
+#productbuyinfo .text-price { font-weight: bold; color:#2B357B; font-size:14px; }
+#productbuyinfo .text-pricestrike { text-decoration: line-through; font-weight: bold; font-size:14px; }
+#productbuyinfo .text-shipping { color: black; font-size:14px; }
+ #productbuyinfo .text-pricesave { color: red; font-size:14px; font-weight: bold; }
+#productbuyinfo .text-availabilitytext { color: Gray; font-size:14px; }
+#productbuyinfo .text-availabilitytitle { font-weight: bold; font-size:14px; white-space:nowrap; margin-right:5px; }
+
+/* matrix items */
+#page-product #frmMain { text-align:center; }
+div#productbody { position:relative; text-align:center; }
+#productbody .matrixdisplay { clear:both; background:#D5D8E1; padding-top:5px; padding-bottom:5px; width:335px; margin-left:auto; margin-right:auto; border-bottom: SOLID #616FA2 1px; text-align:center; }
+#productbody .matrixdisplay table, #productbody .matrixdisplay p { padding-left:10px; padding-right:10px; }
+#productbody .matrixdisplay p { font-size:12px; }
+#productbody .matrixdisplay td { width:50px; }
+ 
+/* related products section */
+#relatedproducts { border-top: solid 1px #EA672A; margin-left:20px; margin-right:20px; }
+ #relatedproducts p { height:0px; margin:0 0 5 0; padding:0; }
+#relateditemheading b { color: #EA672A; text-transform: lowercase; font-size:14px; padding-left:5px; }
+#relateditemtable { margin-left:20px; }
+ #relatedproducts .smallText a { font-size:12px; }
+ #relatedproducts .smallText .text-price { font-size:12px; font-weight:bold; }
+
+/* the "you may also be interested in text" - for bullets display*/
+.text-related { border-top: solid 1px #EA672A; margin-left:20px; font-size:12px; color: #EA672A; font-weight:bold; font-size:14px; }
+
+/* UL and bullets*/
+.list-theme { font-size:12px; }
+ .list-theme-item { list-style: none; background: url("store_images/btn-bullet.gif") no-repeat left top; padding-left:10px; }
+
+/* show me other... button */
+.searchtheme { font-weight:bold; color:#EA672A; font-size:14px; }
+
+/*     Department Page */
+#select-category-heading { color: #EA672A; font-weight: bold; text-align:left; font-size:16px; margin:0; padding:0; }
+.cattablebody { padding:0; border-bottom: solid 1px #EA672A; }
+.cattabletext a { font-size:12px; font-weight:bold; }
+
+/*     Contact Us Page */
+
+/* DIV encompassing the contact form*/
+.contactpage { margin-left:15px; margin-right:15px; font-size:12px; border-bottom: solid 1px #EA672A; }
+.contactpage b { font-size:12px; }
+.contactpage  #addresstext { font-size:12px; }
+.contactpage input, .contactpage textarea { border: solid 1px #595965; }
+/*     Basket/Cart Page */.baskettable { width: 100%; padding-top:0px; padding-bottom:20px; font-size:12px; }
+ .baskettable input { border: solid 1px #595965; }
+ .basketheader { width: 100%; font-weight: bold; font-variant: small-caps; text-align: left; }
+.basketlist-row1 { background: #efefef; }
+ .basketlist-row2 { background:#D5D8E1; }
+.basketlist-hilight { background:#FFFFFF; font-weight: bold; }
+.basketlist-lolight { background-color: #D5D8E1; font-weight: bold; }
+.basketlist-lolight b { font-size:14px; }
+ .basketcol { font-weight: bold; }
+.basketlist-col1 { font-weight:bold; }
+.basketlist-col2 { padding-left:10px; font-weight:bold; }
+.basketlist-col3 { font-weight:bold; }
+.basketlist-col4, .basketlist-col5 { font-weight:bold; }
+.basketlist-blank { background: white; }
+ #frmMain .normal a { text-decoration: underline; }
+
+/* Tips (including basket quick tips) */
+.tiptable { width: 100%; margin-top:10px; }
+ .tiptable img { display:none; }
+ .tipheader td { width: 100%; font-size:11px; font-weight: bold; background: #efefef; color:#000; padding-left:5px; text-transform: lowercase; }
+.tipbody { width: 100%; }
+.tipbody td { background: #efefef; font-size:11px; }
+
+/*     Account Login */
+.formBox { background: #efefef; font-size:12px; }
+ .formBox a { font-size:12px; }
+ .formBox b, .main b { font-size:12px; }
+ 
+/*     Checkout Page*/
+#page-nsc .text-shipping { font-size:12px; }
+#page-nsc .text-bold { font-size:12px; }
+#page-nsc .main { font-size:12px; }
+#page-nsc .text-shipping-row1 { background:#D5D8E1; }
+#page-nsc .text-shipping-row2 { background:#D5D8E1; }
+
+/*     CHECKOUT (not logged in yet) Page */
+.checkoutform .formbox { background: #efefef; }
+.checkoutform .formbox td { font-size:12px; }
+
+/*     Register new user Page */
+.registerform #accountform .formBox { background: #efefef; font-size:11px; }
+.registerform #accountform .text, .registerform #accountform b { font-size:12px; }
+.registerform #accountform .text-small { padding:0; margin:0; font-size:12px; }
+.registerform #accountform .inputRequirement { font-size:12px; }
+ .registerform {}
+.inputRequirement { color: red; }
+.registerform .text { width: 140px; font-size: 12px; text-align: right; }
+.registerform .textbox, .registerform .select   { width: 180px; }
+
+/*     Password Retrieval */
+.infoBox { background: #efefef; }
+ .infoBox b { font-size:12px; }
+/*     Edit/Create Shipping Address */.shippingaddress  .formBox { background: #efefef; font-size:11px; }
+.shippingaddress  .text, .shippingaddress  b { font-size:12px; }
+.shippingaddress .text-small { padding:0; margin:0; font-size:12px; }
+.shippingaddress .inputRequirement { font-size:12px; }
+ .shippingaddress {}
+
+/*     Payment screen */
+ .tender-header, .tender-description, .tender-text { font-size:12px; }
+ 
+/*     Tell a friend page */
+.tellafriendpage { font-size:12px; }
+.tellafriendpage b { font-size:12px; }
+
+/*     Optional bottom links*/
+#bottomlinks { text-align:center; color:#D5D8E1; }
+#bottomlinks a { color:#000; }
+td.mainbodycenter { vertical-align: top; }
+table.mainbody { vertical-align: top; }
+
+/*PURCHASE ORDER HISTORY STYLES*/
+.history-search-page { padding:7px 0px 10px 0px; }
+.history-page { padding:0px 0px 10px 0px; }
+.history-search-page TABLE, .history-page TABLE { font-size:11px; width:100%; border-collapse:collapse; border-spacing:0; }
+.history-page #payandship-details td , .history-page #history-details td { margin:0; padding-left:5px; font-size:12px; }
+.history-page #history-details .history-details-label b, .history-page #payandship-details .history-details-label b { font-weight:bold; width:120px; font-size:12px; }
+.history-page #track-shipment-link { display:inline; padding:0px 0px 3px 25px; clear:none; background: url('images/icon-tracking.gif') no-repeat transparent top left; }
+.history-page A { font-weight:bold; }
+.history-page #itemsordered-details .items-reorder-link { font-size:10px; color: #EA672A; cursor:pointer; }
+.history-page #itemsordered-details { font-size:12px; }
+.history-search-page .product-link{ font-weight:normal; }
+.history-search-page #history-search.formbox { margin-top:7px; padding:5px 5px 5px 8px; }
+.history-search-page #history-search.formbox P { margin: 3px 0px 3px 0px; }
+.history-search-page #history-search { font-size:12px; }
+.history-search-page #history-search.formbox #history-searchselect { width:300px; margin-right:10px; }
+.history-search-page #history-search.formbox LABEL { margin-right:7px; display:block; }
+.history-search-page #history-search.formbox .history-input { width:207px; margin-right:8px; }
+.history-search-page #history-results td { margin:0; padding:5px; }
+.history-search-page .pagination { width:auto; }
+.history-page .heading-subcategory { padding:6px 0px 6px 0px; margin:0; }
+#table-navigation .heading-small { padding:0; margin:0; }
+
+/* css buttons */
+.button-big, .button-small { display: block; cursor: hand; cursor: pointer; text-decoration: none; }
+.button-big .button-text { width:105px; }
+.button-small .button-text { width:50px; }
+.button-left { float: left; display: block; width: 10px; height: 21px; background: transparent url(store_images/buttons.gif) no-repeat scroll 0px 0px; }
+.button-right { float: left; display: block; width: 5px; height: 21px; background: transparent url(store_images/buttons.gif) no-repeat scroll -11px 0px; }
+.button-text { font-family: Arial, sans-serif; text-transform: lowercase; font-size: 12px; font-weight: bold; float: left; display: block; color: #fff; text-decoration: none; background: transparent url(store_images/buttons.gif) no-repeat scroll 0 -22px; height: 21px; padding:0; line-height:22px; text-align:center; }
+.pagination .button-text { width:auto; }
+.pagination .button-right { margin-right: 1px; }
+.pagination .button-small span { filter:alpha(opacity=55); -moz-opacity:.55; opacity:.55; }
+.pagination .button-small:HOVER span { filter:alpha(opacity=99); -moz-opacity:.99; opacity:.99; }
+.pagination .button-on span { filter:alpha(opacity=99); -moz-opacity:.99; opacity:.99; }

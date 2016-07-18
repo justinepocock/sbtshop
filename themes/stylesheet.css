@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic|Lato:400,400italic,700,700italic);
+
+/* Header */
+
+.navbar-inverse,.btn-primary,
+.btn-quickview {background: #BE232B;border-color:#BE232B}
+a{color:#BE232B}
+.topbar {background:white}
+.topbar a span, .topbar .btn{color:#BE232B !important;}
+.topbar a:hover span, .topbar .btn:hover{color:#fff !important;}
+#Footer_menu{background:#C56630}
+.topbar .tablinks a, .topbar .btn-default, #Footer_menu a{color:white}
+.topbar .tablinks a:hover{background:green}
+#Footer_menu a{font-family:"Lato", sans-serif}
+#cartButton .dropdown-toggle{background: #C41130;border-color: #C41130;}
+/* Header End */
+
+
+@media (min-width: 768px) {
+.Horizontal_Nav_Menu > li {position:relative;}
+.Horizontal_Nav_Menu > li:hover > ul {-webkit-column-count:1;column-count:1;width:300px;padding:0px;}
+.Horizontal_Nav_Menu > li > ul > li > a {font-size:15px;padding:10px;line-height:13px;}
+.Horizontal_Nav_Menu > li > ul > li{padding-bottom:0}
+.Horizontal_Nav_Menu > li > a, .Horizontal_Nav_Menu > li > p{font-family:"Lora", sans-serif; font-size: 0.8em; text-transform:uppercase}
+
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {color:#C41130}
+
+.page-checkoutstep2 #btn-make-payment,
+.btn-quickview,
+ul#Footer_menu > li > a:hover,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary,
+.topbar .tablinks a:hover,
+.topbar .btn-default:hover {background:#8A2F34;border-color:#C41130;}
+
+::selection {background:#C41130 !important;color:white;}
+
+@media (max-width: 767px){
+
+.brand a{margin-top:10px; margin-bottom:10px}
+
+}
+
+.breadcrumb>.active {display:inline;}
+
+h1, h2, h3, h4, h5{font-family:Lora, sans-serif}
+
+.product-image .img-thumbnail{max-height:80px}

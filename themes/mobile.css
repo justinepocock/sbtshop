@@ -1,0 +1,72 @@
+
+
+a, a:visited {color:#a2292e}
+
+/* main heading color */
+h1,h2 { color:#333 }
+#main h1 {margin-bottom: 15px;}
+/* general styling */
+.even { background-color:#eee }
+.price { color:black }
+.discount { color:#8a0f8a }
+.price del { color:#aaa }
+a.product { color:#a2292e }
+table.products a.product:visited { color:#a2292e }
+zinput.field-error { border:1px solid #2eccff }
+
+/* template header styling */
+header { background-color:white }
+header img { }
+#logo {padding:0;margin:5px 0 10px 0}
+
+/* cart panel styling */
+header #nsc_cart_container { background-color:#783336;border:0; }
+header #nsc_cart_container a { color:white; }
+header #nsc_cart_container a:active,header #nsc_cart_container a:visited { color:white; }
+
+/* product search styling */
+form#search { background-color:#EAEAEA;border:0;border-bottom:1px solid #DADADA }
+
+/* unordered list primary navigaiton */
+#nav { border:1px solid #CCC; background-color:#EAEAEA }
+#nav li {border-bottom:solid 1px #FFF;border-top:1px solid #DADADA }
+#nav li a { color:#333;}
+#nav > li.opened { background:#eee;border-radius:5px }
+#nav ul a:before { color:#fff }
+
+
+/* checkout related */
+h4 { color:#0099ff }
+#zcheckout-section-checkoutplugin div.plugin-data { background-color:#ffe2f2; border:1px solid #ff96d1 }
+
+/* footer links */
+footer ul { background-color:#a2292e;border:0; }
+footer ul li { border:0;border-bottom:1px solid #bf4444 }
+footer ul li a { color:white;border-bottom:1px solid #830019 }
+footer ul li a:hover { color:white }
+footer ul li a:active,footer ul li a:visited { color:white }
+/* primary button style override */
+.btn.primary { color:#fff;
+  background-color:#acacac;
+  background-repeat:repeat-x;
+  background-image:-khtml-gradient(linear, left top, left bottom, from(#797979), to(#acacac));
+  background-image:-moz-linear-gradient(top, #797979, #acacac);
+  background-image:-ms-linear-gradient(top, #797979, #acacac);
+  background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #797979), color-stop(100%, #acacac));
+  background-image:-webkit-linear-gradient(top, #797979, #acacac);
+  background-image:-o-linear-gradient(top, #797979, #acacac);
+  background-image:linear-gradient(top, #797979,#acacac);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ad7848', endColorstr='#795432', GradientType=0);
+  text-shadow:0 -1px 0 rgba(0,0,0,0.25);
+  border-color:#fff #fff #af0062;
+  border-color:rgba(0,0,0,0.3) rgba(0,0,0,0.3) rgba(0,0,0,0.25);
+}
+
+#checkout-section-customer h4 {color:#333}
+a.link-sort-down, a.link-sort-up, a.link-sort {color:black}
+
+#page_checkoutstep2 h4 {line-height:24px}
+
+/* Basket Long Product Name Fix */
+.basket .details {height:auto !important;}
+.basket .details .row {height:25px;}

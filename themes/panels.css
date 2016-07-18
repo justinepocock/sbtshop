@@ -1,0 +1,206 @@
+/*     Template: Classic Template*     CSS File: panels.css*     Description: all styles associated with left and right screen panels*     Copyright (c) NitroSell Ltd 2006*     Creation Date: 28/11/2006*/
+/*LEFT HAND SIDE NAVPANELS - these consist of all left panels e.g. store nav, prod search, new prodscart, account currency etc, etc...*/
+
+/* all left hand panels */
+.navpanelleft { width: 175px; margin-left:5px; margin-right:35px; }
+ 
+/* child of navpanelleft encompassing all of navpanelleft contents */
+.navpanelleftcell { padding-bottom: 18px; 
+/*18*/
+ }
+
+/* child of navpanelleftcell representing the hedaer of a panel, e.g. "store naviagtion" or "product search" */
+.navpanelleftheader { width: 100%; height: 29px; font-size:12px; font-weight:bold; color:#0d0d0d; }
+
+/* child of navpanelleftheader - the left of the left header */
+.navpanelleftheaderleft { width:42px; background: url('images/panelheaderleft.gif') no-repeat transparent top left; }
+
+/* child of navpanelleftheader - the right of the left header */
+.navpanelleftheaderright { width:12px; background: url('images/panelheaderright.gif') no-repeat transparent top left; }
+
+/* child of navpanelleftheader - the center of the left header */
+.navpanelleftheadercenter { background: url('images/panelheaderbg.gif') repeat-x transparent top left; }
+
+/*  child of navpanelleftcell */
+.navpanelleftcontent {}
+.navpanelleftbody { background: url('images/bg-panelleftbottom.gif') no-repeat transparent bottom right; margin-bottom:8px; width:100%; }
+
+/* child of navpanelleftbody containing actual contents of the panel */
+.navpanelleftcontent table{ background-color:transparent; margin-left:6px; }
+
+/*RIGHT HAND SIDE NAVPANELS - these consist of all right panels e.g. cart, account currency etc, etc...*/
+
+/* all right hand panels */
+.navpanelright { width: 170px; margin-left:35px; margin-right:5px; }
+ 
+/* child of navpanelright encompassing all of navpanelright contents */
+.navpanelrightcell { padding-bottom: 18px; }
+
+/* child of navpanelrightcell representing the hedaer of a panel, e.g. "store naviagtion" or "product search" */
+.navpanelrightheader { width: 100%; height: 29px; font-size:12px; font-weight:bold; color:#0d0d0d; }
+
+/* child of navpanelrightheader - the right of the right header */
+.navpanelrightheaderright { width:12px; background: url('images/panelheaderright.gif') no-repeat transparent top left; }
+
+/* child of navpanelrightheader - the left of the right header */
+.navpanelrightheaderleft { width:42px; background: url('images/panelheaderleft.gif') no-repeat transparent top left; }
+
+/* child of navpanelrightheader - the center of the right header */
+.navpanelrightheadercenter { background: url('images/panelheaderbg.gif') repeat-x transparent top left; }
+        
+/*  child of navpanelrightcell */
+.navpanelrightbody { background: url('images/bg-panelrightbottom.gif') no-repeat transparent bottom left; margin-bottom:8px; width:100%; }
+        
+/* child of navpanelrightbody containing actual contents of the panel */
+.navpanelrightcontent table{ background-color:transparent; margin-right:6px; }
+
+/*CENTER PANELS - the "center" panels refer to the spcial offer panel that will display on all pages if you havespecial offers applied to products in NScPAM.*/
+.navpanelbody{ width:100%; border-bottom: solid 1px #EA672A; }
+.navpanelbodyheader { width: 100%; height: 20px; }
+.navpanelbodyheaderleft {}
+.navpanelbodyheaderright{}
+#morespecials  { background-image: url(store_images/product-theme-right.gif); height: 27px; }
+.navpanelbodyheadercenter { color: #EA672A; font-weight: bold; text-align:left; font-size:16px; width:100%; }
+ .navpanelbodycell { background:transparent; width: 100%; padding-bottom: 15px; }
+.navpanelheader {}
+ .navpanelbodybody { width: 100%; padding:0; }
+.navpanelbodybody .smalltext, .infoBoxContents 
+/*include for actual SOffers page */
+{ font-size:12px; }
+.navpanelbodybody .smalltext .text-price, .infoBoxContents .text-price { font-weight:bold; }
+
+/*span wrapping product price on offer*/
+.navpanelbodybody .smalltext .text-pricespecial, .infoBoxContents .text-pricespecial { color:#2B357B; font-weight:bold; }
+
+/*span wrapping product old price*/
+.navpanelbodybody .smalltext .text-pricestrike, .infoBoxContents .text-pricestrike { font-weight:bold; text-decoration: line-through; }
+.navpanelbodycontent { padding:0; }
+
+/*SPECIFIC PANEL STYLING - the following lists CSS to modify the syle of specific panels */
+
+/* STORE NAVIGATION */
+
+/*span surrounding store navigation panel*/
+.parent-navigation { color: white; }
+
+/*span surrounding core contents of navigation*/
+#panel-navigation {}
+
+/* the general navlink - at same level as #panel-navigation */
+.navlink { color: Black; text-decoration: none; font-size:11px; white-space:nowrap; display:block; margin-left:10px; }
+
+/* General navigation link colours when mouse over, selected, and default Note: if you wish to change a *specific* link you can do so by styling the id #department-N...etcor category #category-N...etc where N is a department or category id respectively*/
+.link-department-select ,.link-department { color: #000; font-weight: bold; text-decoration: none; }
+.link-department-select:hover, .link-department:hover { color: #EA672A; font-weight: bold; text-decoration: none; }
+.link-category { color: #333333; text-decoration: none; }
+.link-category:hover { color: #EA672A; text-decoration: none; }
+.link-category-select { color: #000; font-weight: bold; text-decoration: none; border-bottom: 2px SOLID #EA672A; padding-left:15px; padding-right:10px; display:inline; background: url('images/bg-link-bullet.gif') no-repeat transparent top left; }
+.link-category-select:hover { color: #000; font-weight: bold; text-decoration: none; }
+ .link-subcategory { color: #000; font-weight: normal; text-decoration: none; }
+ .link-subcategory:hover { color: #EA672A; font-weight: normal; text-decoration: none; }
+ .link-subcategory-select { color: #000; font-weight: bold; text-decoration: none; border-bottom: 2px SOLID #EA672A; padding-left:10px; padding-right:10px; display:inline; }
+.link-subcategory-select:hover { color: #000; font-weight: bold; text-decoration: none; }
+
+/* PRODUCT SEARCH*/
+
+/*span surrounding panel*/
+.parent-findprod {}
+.parent-findprod input { height:25px; }
+  
+/* make checkbox smaller than above */
+.parent-findprod .text-search .boxText .text-small input { height:15px; padding-right:5px; }
+
+/*span surrounding core contents of search panel*/
+#panel-search {}
+
+/*contents text*/
+.text-search { display:table; overflow:visible; }
+
+/* input and search icon wrapper*/
+.parent-findprod .boxText { text-align:left; font-size:11px; padding-bottom:10px; }
+ 
+/* NEW PRODUCTS*/
+
+/*span surrounding panel*/
+.parent-newproduct{}
+
+/*span surrounding core contents of panel*/
+#panel-newproduct{}
+
+/*textual contents*/
+.parent-newproduct .boxText{ font-size:12px; padding-bottom:10px; }
+
+/*span wrapping product price*/
+.parent-newproduct .text-price{ font-weight:bold; display:block; overflow:visible; }
+
+/*span wrapping product price on offer*/
+.parent-newproduct .text-pricespecial{ color:#2B357B; font-weight:bold; }
+
+/*span wrapping product old price*/
+.parent-newproduct .text-pricestrike{ font-weight:bold; text-decoration: line-through; }
+
+/* SHOPPING CART*/
+
+/*span surrounding core contents of panel*/
+#panel-shoppingcart{}
+.parent-cart .navpanelrightheadercenter{ font-size:12px; font-weight:bold; color:#0d0d0d; height: 29px; }
+
+/* a mechanism of replacing the cart image */
+.parent-cart .navpanelrightheadercenter img { background-image: url(images/shopping_cart.gif); width:25px; height:16px; }
+.parent-cart .navpanelrightheadercenter a{ margin-right:10px; }
+.parent-cart  .navpanelrightcontent { padding-left:10px; padding-bottom:10px; }
+
+/* styles the number of items, i.e. "1 X" */
+.text-shopping{ font-size:11px; font-weight:bold; }
+
+/* styles the cart product link */
+.text-shopping-link{ font-size:11px; }
+
+/* ACCOUNT HOLDERS*/
+
+/*span surrounding panel*/
+.parent-account{}
+
+/*span surrounding core contents of panel*/
+#panel-account{}
+#panel-account b{ font-weight:normal; font-size:11px; }
+
+/* style the text when logged in */
+#panel-account p{ margin-left:20px; font-size:11px; }
+#panel-account .small a{ font-weight:normal; font-size:11px; text-decoration: underline; }
+
+/* wraps login button*/
+.col2{ height:25px; }
+#panel-account .col2 input{ width:100%; }
+
+/* wraps input boxes and register button */
+.col2{}
+
+/* STORE CURRENCY*/
+
+/*span surrounding panel*/
+.parent-currency{}
+
+/*span surrounding core contents of panel*/
+#panel-currency{}
+
+/*textual contents*/
+.parent-currency .boxText{ font-size:11px; padding-left:15px; padding-bottom:10px; }
+.parent-currency .boxText .select{ font-size:12px; display:block; }
+
+/*currency select element*/
+.parent-currency .select{}
+
+/* PRE-ORDER*/
+
+/*span surrounding panel*/
+.parent-preorder{}
+
+/*span surrounding core contents of panel*/
+#panel-promotion{}
+
+/*textual contents*/
+.parent-preorder .boxText{ text-align:center; padding-left:15px; padding-bottom:10px; font-size:12px; }
+
+/*span wrapping product price*/
+.parent-preorder .text-price{ font-weight:bold; }

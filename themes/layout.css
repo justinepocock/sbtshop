@@ -1,0 +1,66 @@
+/*     Template: Classic Template*     CSS File: layout.css*     Description: general page layout and site wide settings*     Copyright (c) NitroSell Ltd 2006*     Creation Date: 28/11/2006*/
+/*reset some values*/
+.mainbodyleft, .mainbodyleft div,.mainbodyleft form,.mainbodyleft input,.mainbodyleft td,.mainbodyright, .mainbodyright div,.mainbodyright form,.mainbodyright input,.mainbodyright td,.search-table td { margin:0; padding:0; }
+.search-table, .search-table table, .mainbody, .mainbodyleft table, .mainbodyright table, .headertable { border-collapse:collapse; border-spacing:0; }
+
+/* general store wide page properties */
+html { overflow: -moz-scrollbars-vertical; }
+body { text-align: center; font-size: 11px; font-family: Arial, Helvetica, sans-serif; margin:0; padding:0; background: url('images/bg-body.gif') repeat-x #9F9D9E top left; }
+b, p label { text-align: left; color: #000; }
+img { border:0; }
+a { color: Black; text-decoration: none; }
+
+/*WHOLEPAGE - wholepage is a class assigned to a DIV encompassing the entirepage after the body element, see #page id's for individual page config */
+.wholepage{ margin:0; padding:0; width:100%; height:100%; }
+
+/*PAGES - each page in the store also has a unique id associated with the .wholepage assigned DIVallowing you to style each page seperately if required - look out for more as store functionality increases! They each begin with #page */
+#page-home, #page-product, #page-search, #page-register, #page-content, #page-basket{}
+#page-nsc .mainbodycenter form{ text-align:center; }
+#page-register .mainbodycenter a{ color:black; }
+#page-nsc .mainbodycenter a{ color:black; }
+
+/*HEADERS - these header classes are used by the header image (left right and middle)and can be used to further modify uploaded store header images*/
+.headertable { width:100%; }
+.headerleft {}
+.headercenter { width:100%; }
+ .headerright {}
+
+/*HORIZONTAL SEARCH TABLE - at top of screen below header potentially containg brands and type*/
+.search-table { width: 100%; background: #D5D8E1; }
+.search-table td{ padding-left:3px; }
+.search-table table , .search-table table  td { text-align: left; width: 100%; }
+.search-table select { width: 164px; font-weight: bold; font-size:10px; border-left: solid 1px #595965; border-right: solid 1px #595965; border-top: solid 1px #595965; border-bottom: solid 1px #595965; }
+.search-table input{ font-size:10px; }
+
+/*MAINBODY - these classes are used by the left (nav, search, new prods panels),middle (main pagebody),right (cart, account, currency, pre-order panels)and therefore contruct the basic left, middle, right layout within which all other elementsreside*/
+
+/* outermost encapsulating all others - child of wholepage*/
+table.mainbody { width: 100%; font-size:12px; }
+#mainbody tr td { vertical-align: top; }
+
+/* body center - child of mainbody*/
+.mainbodycenter { vertical-align: top; padding: 28 5 0 10px; font-size:11px; background: url(images/bg-center.gif) repeat-x white top left; }
+
+/* left vertical panels */
+.mainbodyleft   { padding-top:13px; width: 190px; height:100%; vertical-align: top; background: url(images/bg-mainbodyleft.gif) no-repeat top right; }
+
+/* right vertical panels */
+.mainbodyright  { padding-top:13px; width: 190px; vertical-align: top; background: url(images/bg-mainbodyright.gif) no-repeat top left; }
+table.navpanelbodyheader td { vertical-align: center; }
+
+/*SITE FOOTER ELEMENTS*/
+
+/* assigned to DIV encompassing credits image and copyright message */
+#sitefooter{ color:gray; text-align:center; font-size:11px; }
+
+/* child of above */
+.storecredits { text-align: center; background:#fff; padding: 10px 10px 10px 10px; }
+
+/*STORE-WIDE ERRORS*/
+.table-error { background: #B22222; }
+.table-error-td { background: Red; }
+.error-text { background: White; font-weight: bold; }
+.error-heading { color: White; font-weight: bold; text-decoration: underline; }
+
+/*MISCELLANEOUS*/
+.testmodeinfo{ background: #9999FF; color: black; font-weight: bold; }
