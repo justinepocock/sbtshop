@@ -1,34 +1,168 @@
-@import url(https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic|Lato:400,400italic,700,700italic);
+html {
+    -webkit-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;
+}
+
+
+body {
+    font-family: futura-pt, helvetica, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 1;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-transform: none;
+    font-family: futura-pt, helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.h3, h3 {
+    font-weight: 700;
+}
+
+.h5, h5 {
+    font-size: 17px;
+    font-weight: 700;
+}
 
 /* Header */
+.navbar-inverse,
+.btn-primary,
+.btn-quickview {
+    background: #436984;
+    border: 0;
+}
+a {
+    color:#BE232B;
+    transition: color 0.35s ease;
+}
 
-.navbar-inverse,.btn-primary,
-.btn-quickview {background: #BE232B;border-color:#BE232B}
-a{color:#BE232B}
-.topbar {background:white}
-.topbar a span, .topbar .btn{color:#BE232B !important;}
-.topbar a:hover span, .topbar .btn:hover{color:#fff !important;}
-#Footer_menu{background:#C56630}
-.topbar .tablinks a, .topbar .btn-default, #Footer_menu a{color:white}
-.topbar .tablinks a:hover{background:green}
-#Footer_menu a{font-family:"Lato", sans-serif}
-#cartButton .dropdown-toggle{background: #C41130;border-color: #C41130;}
-/* Header End */
+.topbar {
+    background:white
+}
+.topbar a span,
+.topbar .btn {
+    color: #333;
+}
+
+.topbar a:hover span,
+.topbar .btn:hover {
+    color:#BE232B !important;
+}
+
+#Footer_menu{
+    background:#C56630
+}
+.topbar .tablinks a,
+.topbar .btn-default,
+#Footer_menu a{
+    color:white
+}
+.topbar .tablinks a:hover{
+    background:transparent ;
+}
+#cartButton .dropdown-toggle{
+    background: #C41130;
+    border-color: #C41130;
+}
+
+.breadcrumb>.active {
+    display:inline;
+}
+
+.product-image .img-thumbnail{
+    max-height:80px
+}
+
+/* Carousel */
+.owl-theme .owl-controls .owl-buttons div {
+    font-size: 15px;
+}
+
+/*Forms*/
+
+.btn {
+    border-radius: 0;
+}
+
+.btn-primary {
+    font-family: inherit;
+}
+
+.form-control {
+    border-radius: 0;
+}
 
 
+footer {
+    background: #1e272b;
+    color: white;
+}
+
+footer h6 {
+    color: #9de8ff;
+    font-family: utopia-std-display,Georgia,serif;
+    font-size: 23px;
+    font-style: italic;
+    font-weight: 300;
+    margin: 0;
+    padding: 0 0 10px;
+}
+
+footer a {
+    color: #9de8ff;
+}
+
+footer a.fa-lg {
+    color: white;
+}
+
+.footerCredits {
+    color: rgba(255,255,255,0.5);
+    font-family: "futura-pt",helvetica,sans-serif;
+    font-weight: 300;
+}
+
+.footerCredits a {
+    color: rgba(255,255,255,0.5);
+    font-weight: 500;
+}
+
+
+/*Desktop */
 @media (min-width: 768px) {
-.Horizontal_Nav_Menu > li {position:relative;}
-.Horizontal_Nav_Menu > li:hover > ul {-webkit-column-count:1;column-count:1;width:300px;padding:0px;}
-.Horizontal_Nav_Menu > li > ul > li > a {font-size:15px;padding:10px;line-height:13px;}
-.Horizontal_Nav_Menu > li > ul > li{padding-bottom:0}
-.Horizontal_Nav_Menu > li > a, .Horizontal_Nav_Menu > li > p{font-family:"Lora", sans-serif; font-size: 0.8em; text-transform:uppercase}
+    .Horizontal_Nav_Menu > li {
+        position:relative;
+    }
+    .Horizontal_Nav_Menu > li a {
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+    .Horizontal_Nav_Menu > li:hover > ul {
+        -webkit-column-count:1;
+        column-count:1;
+        width:300px;
+        padding:0;
+    }
+    .Horizontal_Nav_Menu > li > ul > li > a {
+        font-size:15px;
+        padding:10px;
+        line-height:13px;
+    }
+    .Horizontal_Nav_Menu > li > ul > li{
+        padding-bottom:0
+    }
 
 }
 
 a:hover,
 a:focus,
 a:active,
-a.active {color:#C41130}
+a.active {
+    color:#de5767;
+}
 
 .page-checkoutstep2 #btn-make-payment,
 .btn-quickview,
@@ -38,19 +172,18 @@ ul#Footer_menu > li > a:hover,
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary,
-.topbar .tablinks a:hover,
-.topbar .btn-default:hover {background:#8A2F34;border-color:#C41130;}
-
-::selection {background:#C41130 !important;color:white;}
-
-@media (max-width: 767px){
-
-.brand a{margin-top:10px; margin-bottom:10px}
-
+.topbar .btn-default:hover {
+    background:#436984 ;
 }
 
-.breadcrumb>.active {display:inline;}
+::selection {
+    background: #436984 !important;color:white;
+}
 
-h1, h2, h3, h4, h5{font-family:Lora, sans-serif}
 
-.product-image .img-thumbnail{max-height:80px}
+/* Mobile */
+@media (max-width: 767px){
+    .brand a{
+        margin-top:10px; margin-bottom:10px
+    }
+}
