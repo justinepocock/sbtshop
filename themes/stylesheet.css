@@ -5,13 +5,13 @@ html {
     -moz-osx-font-smoothing: antialiased;
 }
 
-
 body {
     font-family: futura-pt, helvetica, sans-serif;
     font-size: 15px;
     letter-spacing: 1px;
     line-height: 1;
 }
+
 h1, h2, h3, h4, h5, h6 {
     text-transform: none;
     font-family: futura-pt, helvetica, sans-serif;
@@ -34,17 +34,35 @@ h1, h2, h3, h4, h5, h6 {
     background: #436984;
     border: 0;
 }
+
 a {
     color:#BE232B;
     transition: color 0.35s ease;
 }
 
-.topbar {
-    background:white
+ul#Header_menu  {
+    float: right;
 }
+
+ul#Header_menu > li {
+    float: left;
+}
+
+.topbar {
+    background: white;
+}
+
+.topbar .container > div {
+    float: right;
+}
+
 .topbar a span,
 .topbar .btn {
     color: #333;
+}
+
+.topbar .btn-default:hover {
+    background-color: transparent;
 }
 
 .topbar a:hover span,
@@ -55,14 +73,16 @@ a {
 #Footer_menu{
     background:#C56630
 }
+
 .topbar .tablinks a,
-.topbar .btn-default,
-#Footer_menu a{
+#Footer_menu a {
     color:white
 }
+
 .topbar .tablinks a:hover{
     background:transparent ;
 }
+
 #cartButton .dropdown-toggle{
     background: #C41130;
     border-color: #C41130;
@@ -83,8 +103,17 @@ a {
 
 /*Forms*/
 
+form {
+    margin-bottom: 0;
+}
+
 .btn {
     border-radius: 0;
+}
+
+.btn-group-sm>.btn,
+.btn-sm {
+    padding: 10px 14px;
 }
 
 .btn-primary {
@@ -93,6 +122,18 @@ a {
 
 .form-control {
     border-radius: 0;
+}
+.page-checkoutstep2 #btn-make-payment,
+.page-contact .pagebody-container input[type=submit],
+#customcontent form button {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    background-color: #436984;
+    border: 0;
+    border-radius: 0;
+    padding: 8px 16px;
+    transition: background 0.3s ease;
 }
 
 
@@ -130,6 +171,9 @@ footer a.fa-lg {
     font-weight: 500;
 }
 
+ul#Footer_menu > li > a {
+    line-height: 1.35em;
+}
 
 /*Desktop */
 @media (min-width: 768px) {
@@ -138,6 +182,7 @@ footer a.fa-lg {
     }
     .Horizontal_Nav_Menu > li a {
         font-size: 15px;
+        font-weight: 500;
         text-transform: uppercase;
     }
     .Horizontal_Nav_Menu > li:hover > ul {
@@ -171,8 +216,7 @@ ul#Footer_menu > li > a:hover,
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active,
-.open .dropdown-toggle.btn-primary,
-.topbar .btn-default:hover {
+.open .dropdown-toggle.btn-primary {
     background:#436984 ;
 }
 
@@ -186,4 +230,14 @@ ul#Footer_menu > li > a:hover,
     .brand a{
         margin-top:10px; margin-bottom:10px
     }
+}
+
+
+.pager li>a,
+.pager li>span {
+    border-radius: 0;
+}
+.pagination a:first-of-type,
+.pagination a:last-of-type {
+    border-radius: 0;
 }
